@@ -1,4 +1,4 @@
-__all__ = [
+__all__ = (
     "Bold",
     "Italic",
     "Underline",
@@ -9,18 +9,22 @@ __all__ = [
     "Code",
     "Pre",
     "Quote",
+    "Document",
+    "Plain",
     "GlyphBase",
     "GlyphType",
-]
+)
 
 
 from .glyphs import (
     Bold,
     Code,
+    Document,
     GlyphBase,
     Image,
     InlineURL,
     Italic,
+    Plain,
     Pre,
     Quote,
     Spoiler,

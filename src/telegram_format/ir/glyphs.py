@@ -29,6 +29,11 @@ glyph = dataclasses.dataclass(slots=True, frozen=True)
 
 
 @glyph
+class Plain(GlyphBase):
+    content: str
+
+
+@glyph
 class Bold(GlyphBase):
     content: types.GlyphType
 
@@ -80,3 +85,8 @@ class Pre(GlyphBase):
 class Quote(GlyphBase):
     content: types.GlyphType
     collapsed: bool = False
+
+
+@glyph
+class Document(GlyphBase):
+    children: tuple[types.GlyphType, ...]
